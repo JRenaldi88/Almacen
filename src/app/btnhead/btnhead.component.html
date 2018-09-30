@@ -1,0 +1,21 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        <form>
+          <input type="text" ngValue="abcd" />
+          <button (click)="onClickMe(abcd)">Buscar</button>
+          {{abcd}}
+        </form>
+      </td>
+      <td>
+        Producto Nuevo
+        <input type="checkbox" ng-model="myVar" ng-init="myVar = true">
+
+        <div ng-if="myVar">
+          <app-addprod></app-addprod>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
